@@ -16,8 +16,6 @@ lista = ""
 mails=0
 for num in data[0].split():
     mails += 1
-    #if(mails > 21):
-        #break
     try:
         rs, mensaje = server.fetch(num, "(RFC822)")
     except:
